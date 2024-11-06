@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5; /* Simulates a phone background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  width: 390px; /* iPhone 16 Pro Max width in points (approx. 1290px in actual resolution) */
+  height: 844px; /* iPhone 16 Pro Max height in points (approx. 2796px in actual resolution) */
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.tab-content, .scene {
+  display: none;
+  padding: 20px;
+  height: calc(100% - 150px); /* Adjust for the tab-bar height */
+  overflow-y: auto;
+}
+
+.tab-content.active, .scene.active {
+  display: block;
+}
+
+#chat-container {
+  background-color: #d7e8ff;
+  border-radius: 10px;
+  padding: 10px;
+  height: calc(50% - 70px); /* Adjust for input field height */
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.chat-button {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#message-input {
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#send-button, #add-person-button {
+  padding: 10px;
+}
+
+#inventory-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-section-button {
+  background-color: #aaffaa;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.section {
+  background-color: #f0c674;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 100px;
+}
+
+#list-container {
+  background-color: #d7e8ff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#item-list {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+.list-button {
+  background-color: #aaffaa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  margin: 20px auto;
+  width: 50px;
+  text-align: center;
+}
+
+.contact-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #aaffaa;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-button:last-of-type {
+  background-color: #ffaaaa;
+}
+
+#contacts-list {
+  margin: 20px 0;
+}
+
+.contact {
+  background-color: #f0c674;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+}

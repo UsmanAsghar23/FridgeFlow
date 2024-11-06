@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation bar at the bottom -->
+  <div class="tab-bar">
+    <button class="tab-button" id="chat-button">Chat</button>
+    <button class="tab-button" id="inventory-button">Inventory</button>
+    <button class="tab-button" id="list-button">List</button>
+  </div>
+
+  <!-- Chat Section -->
+  <div id="chat-section" class="tab-content">
+    <h1>UIC Brothers</h1>
+    <button id="add-person-button" class="chat-button">+</button>
+    <div id="chat-container">
+      <!-- Messages will be displayed here -->
+    </div>
+    <input type="text" id="message-input" placeholder="Enter message">
+    <button id="send-button" class="chat-button">Send</button>
+  </div>
+
+  <!-- Inventory Section -->
+  <div id="inventory-section" class="tab-content">
+    <h1>Inventory</h1>
+    <div id="inventory-container">
+      <button class="add-section-button" id="add-section-button">+ Add Section</button>
+    </div>
+  </div>
+
+  <!-- List Section -->
+  <div id="list-section" class="tab-content">
+    <h1>List</h1>
+    <div id="list-container">
+      <ul id="item-list">
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+      </ul>
+      <button id="add-item-button" class="list-button">+</button>
+    </div>
+  </div>
+
+  <!-- Contacts Scene -->
+  <div id="contacts-scene" class="scene">
+    <h1>Contacts</h1>
+    <button id="back-button" class="contact-button">Back</button>
+    <div id="contacts-list">
+      <div class="contact">Usman</div>
+      <div class="contact">Moe</div>
+      <div class="contact">Shareek</div>
+      <div class="contact">Ikraam</div>
+      <div class="contact">Ammer</div>
+    </div>
+    <button id="add-new-contact" class="contact-button">Add</button>
+    <button id="delete-contact" class="contact-button">Delete</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
