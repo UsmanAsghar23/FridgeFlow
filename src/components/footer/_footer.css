@@ -1,0 +1,43 @@
+.footer {
+  background-color: #005b4c;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 200px;
+  max-height: 250px;
+  overflow: hidden;
+  bottom: 0;
+  box-shadow: 4px 0 8px rgb(74 68 83 / 70%);
+}
+
+.social-media > a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: solid 3px #005b4c;
+}
+
+.social-media > a:hover {
+  border-bottom: solid 3px #b59136;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 430px) {
+  h4 {
+    margin: 0.25rem;
+    font-size: 1rem;
+  }
+  .social-media > a {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
